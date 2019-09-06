@@ -158,8 +158,8 @@ public class HsDataValidate {
         return filedMap;
     }
 
-    public static void main(String[] args)throws Exception {
+   /* public static void main(String[] args)throws Exception {
         List<String> list = Arrays.asList( "日期","购销计划", "高", "开", "低", "收", "涨跌", "成交", "订货", "平均价");
         validate("C:\\Users\\10479\\Desktop\\主力连续合约\\昆糖行情.xls", "昆糖行情", 0, list);
-    }
+    }*/
 }
