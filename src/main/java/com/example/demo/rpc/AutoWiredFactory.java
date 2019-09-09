@@ -17,7 +17,6 @@ import java.util.List;
 @Component
 public class AutoWiredFactory {
 
-
     /**
      * 需要加載实例列表
      */
@@ -35,7 +34,7 @@ public class AutoWiredFactory {
 
 
     /**
-     * todo 通过扫描获取所有rpc代理类
+     * 通过扫描获取所有rpc代理类
      */
     @PostConstruct
     public void autoWiredRpcProxy() {
