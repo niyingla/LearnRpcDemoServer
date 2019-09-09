@@ -42,6 +42,7 @@ public class NettyServer {
                         sc.pipeline().addLast(new IdleStateHandler(0, 0, 60));
                         sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingDecoder());
                         sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingEncoder());
+//                        sc.pipeline().addLast(new JsonObjectDecoder());
                         sc.pipeline().addLast(new ServerHeartBeatHandler());
                     }
                 });
