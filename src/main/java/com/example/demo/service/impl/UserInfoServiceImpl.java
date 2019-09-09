@@ -2,12 +2,13 @@ package com.example.demo.service.impl;
 
 import com.example.demo.dto.CompareDto;
 import com.example.demo.service.UserInfoService;
+import org.springframework.stereotype.Service;
 
 /**
  * @author pikaqiu
  */
 
-//@Service
+@Service
 public class UserInfoServiceImpl implements UserInfoService  {
 
     @Override
