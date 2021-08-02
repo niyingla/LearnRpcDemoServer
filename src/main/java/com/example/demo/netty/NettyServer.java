@@ -8,7 +8,6 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.handler.timeout.IdleStateHandler;
 
 /**
  * @program: demo
@@ -42,10 +41,10 @@ public class NettyServer {
                     @Override
                     protected void initChannel(SocketChannel sc) throws Exception {
 //                        sc.pipeline().addLast(new IdleStateHandler(0, 0, 60));
-                        sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingDecoder());
-                        sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingEncoder());
-//                        sc.pipeline().addLast(new JsonObjectDecoder());
-                        sc.pipeline().addLast(new ServerHeartBeatHandler());
+                      sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingDecoder());
+                      sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingEncoder());
+//                      sc.pipeline().addLast(new JsonObjectDecoder());
+                      sc.pipeline().addLast(new ServerHeartBeatHandler());
                     }
                 });
         ChannelFuture cf = b.bind(7001).sync();
