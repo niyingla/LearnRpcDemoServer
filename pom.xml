@@ -36,16 +36,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.16</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>3.16</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
@@ -68,8 +58,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-          <!--  <version>4.1.38.Final</version>-->
-            <version>5.0.0.Alpha2</version>
+            <version>4.1.12.Final</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.marshalling</groupId>

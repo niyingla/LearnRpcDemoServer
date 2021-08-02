@@ -14,7 +14,7 @@ public class UserInfoServiceImpl implements UserInfoService  {
     @Override
     public CompareDto getCompareDto(String type) {
         CompareDto compareDto = new CompareDto();
-        compareDto.setType("xiao");
+        compareDto.setType(type);
         compareDto.setWay("ye");
         return compareDto;
     }

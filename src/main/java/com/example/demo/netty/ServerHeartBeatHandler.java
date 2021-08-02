@@ -6,9 +6,11 @@ import com.example.demo.rpc.FrameWork;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 
 
-public class ServerHeartBeatHandler extends ChannelHandlerAdapter {
+public class ServerHeartBeatHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 接受远程请求 并响应结果

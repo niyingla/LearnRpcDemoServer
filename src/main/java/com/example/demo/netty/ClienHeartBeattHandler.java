@@ -3,13 +3,14 @@ package com.example.demo.netty;
 import com.example.demo.dto.RpcRequestDto;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.ReferenceCountUtil;
 
 
 /**
  * @author xiaoye
  */
-public class ClienHeartBeattHandler extends ChannelHandlerAdapter {
+public class ClienHeartBeattHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
